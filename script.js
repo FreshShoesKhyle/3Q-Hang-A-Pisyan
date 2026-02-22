@@ -15,11 +15,11 @@ let playerLives = 5;
 
 const randomIndex = generateRandomIndex(); 
 const chosenWord = wordArray[randomIndex]; 
-const lettersArray = [];
 
 //created this function so it'll look better on index (it's just makeblanks and update lives)
 function playHangman() {
     makeBlanks();
+    updateLives();
 }
 
 function keyBoardLetter(letterClicked, button) {
@@ -88,4 +88,5 @@ function checkIfPlayerWin() {
         alert("YOU LOSE! The word was: " + chosenWord);
     }
 }
+
 
