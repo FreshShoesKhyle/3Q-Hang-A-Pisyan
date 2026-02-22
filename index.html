@@ -7,14 +7,19 @@
     <meta charset="UTF-8">
     <meta name="author" content="Definitely-Not-A-Crammed-Code-Of-Hangman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div id="revealedLetters">
-        <body onload="makeBlanks()">
+     <body onload="playHangman()"> <!--Changed makeBlanks into playHangman + Moved it here so we can easily adjust the graphics better -->
+    <div id = "gameContainer>
+        <div id="revealedLetters"> </div>
+        <div id = "lives> 
+            Lives: <span id = "playerLices></span>
+        </div>
     </div>
-
     <div id="keyBoard">
         <h1>
             <button type="button" onclick="keyBoardLetter('Q', this)">Q</button>
@@ -49,12 +54,6 @@
     </div>
 
     <script src="script.js"></script>
-
-    <script>
-        makeBlanks();
-    </script>
-
 </body>
-
-
 </html>
+
