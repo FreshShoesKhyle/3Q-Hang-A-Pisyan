@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#gameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+#revealedLetters {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+#lives {
+  font-size: 20px;
+}
+
+#keyBoard button {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+  font-size: 16px;
+  cursor: pointer;
+}
